@@ -1,21 +1,30 @@
-//
-//  ContentView.swift
-//  TicTacToeProject
-//
-//  Created by Gabdilkarim Ata on 14.04.2024.
-//
-
 import SwiftUI
 
 struct MainMenuView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            VStack {
+                Text("Tic Tac Toe")
+                    .font(.system(size: 45, weight: .bold))
+                
+                Image("ticTacToe")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 250, height: 250)
+                
+                NavigationLink(
+                    destination: EnterNameView(),
+                    label: {
+                        Text("Let's start!")
+                            .font(.system(size: 30, weight: .bold))
+                            .padding()
+                            .padding(.horizontal, 50)
+                            .background(.black)
+                            .foregroundColor(.white)
+                            .cornerRadius(20)
+                    }) .padding(.top, 140)
+            }
         }
-        .padding()
     }
 }
 
