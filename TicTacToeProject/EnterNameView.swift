@@ -11,9 +11,11 @@ struct EnterNameView: View {
             Text("Enter your name")
                 .font(.system(size: 45, weight: .bold))
             
-            PlayerTextField(placeHolder: "First player's name", player: $firstPlayer)
-            
-            PlayerTextField(placeHolder: "Second player's name", player: $secondPlayer)
+            Section(footer: Text("Reminder!\nIf you want to start with \"X\", write your name first!")) {
+                PlayerTextField(placeHolder: "First player's name", player: $firstPlayer)
+                
+                PlayerTextField(placeHolder: "Second player's name", player: $secondPlayer)
+            }.font(.system(size: 14, weight: .bold))
             
             NavigationLink(
                 destination: GamePlayView(),
