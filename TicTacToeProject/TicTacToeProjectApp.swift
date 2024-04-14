@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct TicTacToeProjectApp: App {
+    
+    @AppStorage("isDarkMode") var isDarkMode = false
+    
     var body: some Scene {
         WindowGroup {
             TabBarView()
+                .preferredColorScheme(isDarkMode ? .dark : .light)
         }
     }
 }

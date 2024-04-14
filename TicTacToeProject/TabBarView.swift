@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct TabBarView: View {
+    
+    @AppStorage("isDarkMode") var isDarkMode = false
+    
     var body: some View {
         TabView {
             MainMenuView()
@@ -21,7 +24,8 @@ struct TabBarView: View {
                     Text("Settings")
                 }
         }
-        .accentColor(.black)
+        .accentColor(Color("AdaptiveColor"))
+        
     }
 }
 

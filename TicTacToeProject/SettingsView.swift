@@ -8,8 +8,31 @@
 import SwiftUI
 
 struct SettingsView: View {
+    
+    @AppStorage("isDarkMode") var isDarkMode = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            Form {
+                Section(footer: Text("This option puts the display into dark mode.")) {
+                    Toggle(isOn: $isDarkMode, label: {
+                        Text("Dark mode")
+                    })
+                }
+                
+                Section {
+                    Button {
+                        guard let url = URL(string: "https://www.instagram.com/gabdilkarim") else { return }
+                        UIApplication.shared.open(url)
+                    } label: {
+                        Label("Follow me on inst @gabdilkarim", systemImage: "link")
+                    }
+                }
+            }
+            .foregroundColor(Color("AdaptiveColor"))
+            .navigationTitle("Settings")
+            .environment(\.colorScheme, isDarkMode ? .dark : .light)
+        }
     }
 }
 
