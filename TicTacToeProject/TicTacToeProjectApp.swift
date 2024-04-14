@@ -14,7 +14,7 @@ struct TicTacToeProjectApp: App {
     
     var body: some Scene {
         WindowGroup {
-            TabBarView()
+            MainMenuView()
                 .preferredColorScheme(isDarkMode ? .dark : .light)
         }
     }
