@@ -101,10 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				F17E65842BCBC953009539A2 /* TicTacToeProjectApp.swift */,
-				F17E65862BCBC953009539A2 /* MainMenuView.swift */,
-				F17E65AE2BCBC9AF009539A2 /* EnterNameView.swift */,
-				F17E65B42BCBEA49009539A2 /* GamePlayView.swift */,
-				F17E65B02BCBCAC1009539A2 /* SettingsView.swift */,
+				F17E65B62BCC312E009539A2 /* Views */,
 				F17E65882BCBC955009539A2 /* Assets.xcassets */,
 				F17E658A2BCBC955009539A2 /* Preview Content */,
 			);
@@ -134,6 +131,17 @@
 				F17E65A12BCBC956009539A2 /* TicTacToeProjectUITestsLaunchTests.swift */,
 			);
 			path = TicTacToeProjectUITests;
+			sourceTree = "<group>";
+		};
+		F17E65B62BCC312E009539A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F17E65862BCBC953009539A2 /* MainMenuView.swift */,
+				F17E65AE2BCBC9AF009539A2 /* EnterNameView.swift */,
+				F17E65B42BCBEA49009539A2 /* GamePlayView.swift */,
+				F17E65B02BCBCAC1009539A2 /* SettingsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
