@@ -27,7 +27,7 @@ struct EnterNameView: View {
                         .background(Color("AdaptiveColor"))
                         .foregroundColor(isDarkMode ? .black : .white)
                         .cornerRadius(20)
-                }).padding(.top, 140)
+                }).padding(.top, 85)
         }
         .preferredColorScheme(isDarkMode ? .dark : .light)
     }
