@@ -1,6 +1,8 @@
 import Foundation
 
-class GameState: ObservableObject {
+class GameViewModel: ObservableObject {
+    @Published var firstPlayer: Player
+    @Published var secondPlayer: Player
     @Published var board = [[Cell]]()
     @Published var turn = Tile.Cross
     @Published var noughtsScore = 0
@@ -8,12 +10,15 @@ class GameState: ObservableObject {
     @Published var showAlert = false
     @Published var alertMessage = "Draw"
     
-    init() {
+    
+    init(firstPlayer: String, secondPlayer: String) {
+        self.firstPlayer = Player(name: firstPlayer)
+        self.secondPlayer = Player(name: secondPlayer)
         resetBoard()
     }
     
     func turnText() -> String {
-        return turn == Tile.Cross ? "Turn: X" : "Turn: O"
+        return turn == Tile.Cross ? "\(firstPlayer.name)'s turn" : "\(secondPlayer.name)'s turn"
     }
     
     func placeTile(_ row: Int, _ column: Int) {
@@ -30,8 +35,8 @@ class GameState: ObservableObject {
                 noughtsScore += 1
             }
             
-            let winner = turn == Tile.Cross ? "Crosses" : "Noughts"
-            alertMessage = winner + " Win!"
+            let winner = turn == Tile.Cross ? firstPlayer.name : secondPlayer.name
+            alertMessage = "\(winner) wins!"
             showAlert = true
         } else {
             turn = turn == Tile.Cross ? Tile.Nought : Tile.Cross
@@ -46,7 +51,7 @@ class GameState: ObservableObject {
     func checkFowDraw() -> Bool {
         for row in board {
             for cell in row {
-                if cell.tile == Tile.Empty {
+                if cell.tile == Tile.Empty || checkForVictory() == true {
                     return false
                 }
             }
@@ -104,5 +109,10 @@ class GameState: ObservableObject {
             newBoard.append(row)
         }
         board = newBoard
+    }
+    
+    func resetGame() {
+        crossesScore = 0
+        noughtsScore = 0
     }
 }

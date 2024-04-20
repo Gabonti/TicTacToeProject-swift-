@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct MainMenuView: View {
+struct MainView: View {
     
     @AppStorage("isDarkMode") var isDarkMode = false
     
@@ -45,5 +45,5 @@ struct MainMenuView: View {
 }
 
 #Preview {
-    MainMenuView()
+    MainView()
 }
