@@ -19,6 +19,8 @@
 		F17E65B52BCBEA49009539A2 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17E65B42BCBEA49009539A2 /* GameView.swift */; };
 		F17E65BC2BCC45AD009539A2 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17E65BB2BCC45AD009539A2 /* Cell.swift */; };
 		F17E65BE2BCC46F3009539A2 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17E65BD2BCC46F3009539A2 /* GameViewModel.swift */; };
+		F19593302BDD06E300F61FAC /* ApiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195932F2BDD06E300F61FAC /* ApiView.swift */; };
+		F19593342BDE385500F61FAC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19593332BDE385500F61FAC /* LoginView.swift */; };
 		F1E0B2EA2BD3977A005D3D1E /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0B2E92BD3977A005D3D1E /* Player.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +57,8 @@
 		F17E65B42BCBEA49009539A2 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		F17E65BB2BCC45AD009539A2 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		F17E65BD2BCC46F3009539A2 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		F195932F2BDD06E300F61FAC /* ApiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiView.swift; sourceTree = "<group>"; };
+		F19593332BDE385500F61FAC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F1E0B2E92BD3977A005D3D1E /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,10 +148,9 @@
 		F17E65B62BCC312E009539A2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F17E65862BCBC953009539A2 /* MainView.swift */,
-				F17E65AE2BCBC9AF009539A2 /* EnterNameView.swift */,
-				F17E65B42BCBEA49009539A2 /* GameView.swift */,
-				F17E65B02BCBCAC1009539A2 /* SettingsView.swift */,
+				F19593352BDE387000F61FAC /* GamePlay */,
+				F19593322BDD18C700F61FAC /* Settings */,
+				F19593312BDD188700F61FAC /* Authentication */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -159,6 +162,33 @@
 				F1E0B2E92BD3977A005D3D1E /* Player.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F19593312BDD188700F61FAC /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				F19593332BDE385500F61FAC /* LoginView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		F19593322BDD18C700F61FAC /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F17E65B02BCBCAC1009539A2 /* SettingsView.swift */,
+				F195932F2BDD06E300F61FAC /* ApiView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F19593352BDE387000F61FAC /* GamePlay */ = {
+			isa = PBXGroup;
+			children = (
+				F17E65862BCBC953009539A2 /* MainView.swift */,
+				F17E65AE2BCBC9AF009539A2 /* EnterNameView.swift */,
+				F17E65B42BCBEA49009539A2 /* GameView.swift */,
+			);
+			path = GamePlay;
 			sourceTree = "<group>";
 		};
 		F1E0B2E62BD39297005D3D1E /* ViewModel */ = {
@@ -304,8 +334,10 @@
 				F17E65B12BCBCAC1009539A2 /* SettingsView.swift in Sources */,
 				F17E65AF2BCBC9AF009539A2 /* EnterNameView.swift in Sources */,
 				F1E0B2EA2BD3977A005D3D1E /* Player.swift in Sources */,
+				F19593302BDD06E300F61FAC /* ApiView.swift in Sources */,
 				F17E65852BCBC953009539A2 /* TicTacToeProjectApp.swift in Sources */,
 				F17E65B52BCBEA49009539A2 /* GameView.swift in Sources */,
+				F19593342BDE385500F61FAC /* LoginView.swift in Sources */,
 				F17E65BC2BCC45AD009539A2 /* Cell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

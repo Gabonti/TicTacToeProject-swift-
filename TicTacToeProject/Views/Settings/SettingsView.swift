@@ -21,6 +21,12 @@ struct SettingsView: View {
                 }
                 
                 Section {
+                    NavigationLink(
+                        destination: ApiView(),
+                        label: {
+                            Label("Quotes(API)", systemImage: "message")
+                        })
+                    
                     Button {
                         guard let url = URL(string: "https://www.instagram.com/gabdilkarim") else { return }
                         UIApplication.shared.open(url)
