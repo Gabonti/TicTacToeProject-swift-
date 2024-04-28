@@ -21,6 +21,17 @@
 		F17E65BE2BCC46F3009539A2 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17E65BD2BCC46F3009539A2 /* GameViewModel.swift */; };
 		F19593302BDD06E300F61FAC /* ApiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195932F2BDD06E300F61FAC /* ApiView.swift */; };
 		F19593342BDE385500F61FAC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19593332BDE385500F61FAC /* LoginView.swift */; };
+		F19593372BDE3B5A00F61FAC /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19593362BDE3B5A00F61FAC /* InputView.swift */; };
+		F19593392BDE43B800F61FAC /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19593382BDE43B800F61FAC /* RegistrationView.swift */; };
+		F195933D2BDEAAD500F61FAC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195933C2BDEAAD500F61FAC /* User.swift */; };
+		F195933F2BDEAD7600F61FAC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195933E2BDEAD7600F61FAC /* ProfileView.swift */; };
+		F19593412BDEB15300F61FAC /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19593402BDEB15300F61FAC /* AuthViewModel.swift */; };
+		F19593432BDEB29900F61FAC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F19593422BDEB29900F61FAC /* GoogleService-Info.plist */; };
+		F19593462BDEB4DE00F61FAC /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F19593452BDEB4DE00F61FAC /* FirebaseAuth */; };
+		F19593482BDEB4DE00F61FAC /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F19593472BDEB4DE00F61FAC /* FirebaseFirestore */; };
+		F195934A2BDEB4DE00F61FAC /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F19593492BDEB4DE00F61FAC /* FirebaseFirestoreSwift */; };
+		F195934C2BDEB4DE00F61FAC /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F195934B2BDEB4DE00F61FAC /* FirebaseStorage */; };
+		F195934E2BDEBC6C00F61FAC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195934D2BDEBC6C00F61FAC /* ContentView.swift */; };
 		F1E0B2EA2BD3977A005D3D1E /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0B2E92BD3977A005D3D1E /* Player.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +70,13 @@
 		F17E65BD2BCC46F3009539A2 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		F195932F2BDD06E300F61FAC /* ApiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiView.swift; sourceTree = "<group>"; };
 		F19593332BDE385500F61FAC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F19593362BDE3B5A00F61FAC /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		F19593382BDE43B800F61FAC /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		F195933C2BDEAAD500F61FAC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F195933E2BDEAD7600F61FAC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F19593402BDEB15300F61FAC /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		F19593422BDEB29900F61FAC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F195934D2BDEBC6C00F61FAC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F1E0B2E92BD3977A005D3D1E /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +85,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F19593462BDEB4DE00F61FAC /* FirebaseAuth in Frameworks */,
+				F195934C2BDEB4DE00F61FAC /* FirebaseStorage in Frameworks */,
+				F19593482BDEB4DE00F61FAC /* FirebaseFirestore in Frameworks */,
+				F195934A2BDEB4DE00F61FAC /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +137,7 @@
 				F17E65B62BCC312E009539A2 /* Views */,
 				F1E0B2E62BD39297005D3D1E /* ViewModel */,
 				F17E65882BCBC955009539A2 /* Assets.xcassets */,
+				F19593422BDEB29900F61FAC /* GoogleService-Info.plist */,
 				F17E658A2BCBC955009539A2 /* Preview Content */,
 			);
 			path = TicTacToeProject;
@@ -151,6 +174,7 @@
 				F19593352BDE387000F61FAC /* GamePlay */,
 				F19593322BDD18C700F61FAC /* Settings */,
 				F19593312BDD188700F61FAC /* Authentication */,
+				F195934D2BDEBC6C00F61FAC /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -158,8 +182,8 @@
 		F17E65BA2BCC38DF009539A2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F17E65BB2BCC45AD009539A2 /* Cell.swift */,
-				F1E0B2E92BD3977A005D3D1E /* Player.swift */,
+				F195933B2BDEAAC700F61FAC /* Authentication */,
+				F195933A2BDEAABB00F61FAC /* GamePlay */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,6 +192,8 @@
 			isa = PBXGroup;
 			children = (
 				F19593332BDE385500F61FAC /* LoginView.swift */,
+				F19593382BDE43B800F61FAC /* RegistrationView.swift */,
+				F19593362BDE3B5A00F61FAC /* InputView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -177,6 +203,7 @@
 			children = (
 				F17E65B02BCBCAC1009539A2 /* SettingsView.swift */,
 				F195932F2BDD06E300F61FAC /* ApiView.swift */,
+				F195933E2BDEAD7600F61FAC /* ProfileView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -191,10 +218,28 @@
 			path = GamePlay;
 			sourceTree = "<group>";
 		};
+		F195933A2BDEAABB00F61FAC /* GamePlay */ = {
+			isa = PBXGroup;
+			children = (
+				F17E65BB2BCC45AD009539A2 /* Cell.swift */,
+				F1E0B2E92BD3977A005D3D1E /* Player.swift */,
+			);
+			path = GamePlay;
+			sourceTree = "<group>";
+		};
+		F195933B2BDEAAC700F61FAC /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				F195933C2BDEAAD500F61FAC /* User.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		F1E0B2E62BD39297005D3D1E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				F17E65BD2BCC46F3009539A2 /* GameViewModel.swift */,
+				F19593402BDEB15300F61FAC /* AuthViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -215,6 +260,12 @@
 			dependencies = (
 			);
 			name = TicTacToeProject;
+			packageProductDependencies = (
+				F19593452BDEB4DE00F61FAC /* FirebaseAuth */,
+				F19593472BDEB4DE00F61FAC /* FirebaseFirestore */,
+				F19593492BDEB4DE00F61FAC /* FirebaseFirestoreSwift */,
+				F195934B2BDEB4DE00F61FAC /* FirebaseStorage */,
+			);
 			productName = TicTacToeProject;
 			productReference = F17E65812BCBC953009539A2 /* TicTacToeProject.app */;
 			productType = "com.apple.product-type.application";
@@ -287,6 +338,9 @@
 				Base,
 			);
 			mainGroup = F17E65782BCBC953009539A2;
+			packageReferences = (
+				F19593442BDEB4DE00F61FAC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = F17E65822BCBC953009539A2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -305,6 +359,7 @@
 			files = (
 				F17E658C2BCBC955009539A2 /* Preview Assets.xcassets in Resources */,
 				F17E65892BCBC955009539A2 /* Assets.xcassets in Resources */,
+				F19593432BDEB29900F61FAC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,15 +384,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F195933D2BDEAAD500F61FAC /* User.swift in Sources */,
 				F17E65BE2BCC46F3009539A2 /* GameViewModel.swift in Sources */,
+				F195934E2BDEBC6C00F61FAC /* ContentView.swift in Sources */,
 				F17E65872BCBC953009539A2 /* MainView.swift in Sources */,
 				F17E65B12BCBCAC1009539A2 /* SettingsView.swift in Sources */,
+				F19593392BDE43B800F61FAC /* RegistrationView.swift in Sources */,
+				F19593412BDEB15300F61FAC /* AuthViewModel.swift in Sources */,
 				F17E65AF2BCBC9AF009539A2 /* EnterNameView.swift in Sources */,
 				F1E0B2EA2BD3977A005D3D1E /* Player.swift in Sources */,
 				F19593302BDD06E300F61FAC /* ApiView.swift in Sources */,
 				F17E65852BCBC953009539A2 /* TicTacToeProjectApp.swift in Sources */,
 				F17E65B52BCBEA49009539A2 /* GameView.swift in Sources */,
+				F19593372BDE3B5A00F61FAC /* InputView.swift in Sources */,
 				F19593342BDE385500F61FAC /* LoginView.swift in Sources */,
+				F195933F2BDEAD7600F61FAC /* ProfileView.swift in Sources */,
 				F17E65BC2BCC45AD009539A2 /* Cell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -668,6 +729,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F19593442BDEB4DE00F61FAC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.24.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F19593452BDEB4DE00F61FAC /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F19593442BDEB4DE00F61FAC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		F19593472BDEB4DE00F61FAC /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F19593442BDEB4DE00F61FAC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		F19593492BDEB4DE00F61FAC /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F19593442BDEB4DE00F61FAC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		F195934B2BDEB4DE00F61FAC /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F19593442BDEB4DE00F61FAC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F17E65792BCBC953009539A2 /* Project object */;
 }

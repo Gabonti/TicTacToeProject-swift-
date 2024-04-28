@@ -8,19 +8,57 @@
 import SwiftUI
 
 struct SettingsView: View {
-    
     @AppStorage("isDarkMode") var isDarkMode = false
+    @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
         NavigationView {
-            Form {
-                Section(footer: Text("This option puts the display into dark mode.")) {
-                    Toggle(isOn: $isDarkMode, label: {
-                        Text("Dark mode")
-                    })
+            List {
+                if let user = viewModel.currentUser {
+                    Section {
+                        NavigationLink {
+                            ProfileView()
+                        } label: {
+                            HStack {
+                                Text(user.initials)
+                                    .font(.title)
+                                    .fontWeight(.semibold)
+                                    .foregroundColor(isDarkMode ? .black : .white)
+                                    .frame(width: 72, height: 72)
+                                    .background(Color("AdaptiveColor"))
+                                    .cornerRadius(100)
+                                
+                                VStack(alignment: .leading, spacing: 4) {
+                                    Text(user.fullname)
+                                        .fontWeight(.semibold)
+                                        .padding(.top, 4)
+                                    
+                                    Text(user.email)
+                                        .font(.footnote)
+                                        .accentColor(Color("AdaptiveColor"))
+                                }
+                            }
+                        }
+                    }
                 }
                 
-                Section {
+                Section(header: Text("General"), footer: Text("This option puts the display into dark mode.")) {
+                    
+                    Toggle(isOn: $isDarkMode, label: {
+                        Text("Dark mode")
+                    }).tint(.gray)
+                    
+                    HStack {
+                        Label("Version", systemImage: "gear")
+                        
+                        Spacer()
+                        
+                        Text("1.0")
+                            .font(.subheadline)
+                    }
+                }
+                
+                Section("Links") {
                     NavigationLink(
                         destination: ApiView(),
                         label: {

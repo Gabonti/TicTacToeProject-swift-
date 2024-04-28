@@ -6,16 +6,22 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct TicTacToeProjectApp: App {
-    
     @AppStorage("isDarkMode") var isDarkMode = false
+    @StateObject var viewModel = AuthViewModel()
+    
+    init() {
+        FirebaseApp.configure()
+    }
     
     var body: some Scene {
         WindowGroup {
-            MainView()
+            ContentView()
                 .preferredColorScheme(isDarkMode ? .dark : .light)
+                .environmentObject(viewModel)
         }
     }
 }
