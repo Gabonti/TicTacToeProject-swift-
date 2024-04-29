@@ -34,7 +34,7 @@ struct RegistrationView: View {
                 
                 InputView(text: $confirmPassword,
                           title: "Confirm Password",
-                          placeholder: "Confirm your passwrdd",
+                          placeholder: "Confirm your password",
                           isSecureField: true)
             }
             .padding(.horizontal)

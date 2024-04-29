@@ -24,7 +24,7 @@ struct LoginView: View {
                     
                     InputView(text: $password,
                               title: "Password",
-                              placeholder: "Enter your paasswrod",
+                              placeholder: "Enter your password",
                               isSecureField: true)
                 }
                 .padding(.horizontal)
